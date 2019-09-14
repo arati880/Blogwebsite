@@ -1,0 +1,245 @@
+<html>
+<head>
+<title>home</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><style>
+.slider{
+	top: 223px;
+	position: relative;
+	list-style: none;
+	padding: 0px;
+	display: flex;
+	justify-content: center;
+}
+.slider img{
+	position: absolute;
+	left: 0px;
+	top: 190px;
+	width: 320px;
+	height: 223px;
+	opacity: 0;
+}
+.slider input[type="radio"]{
+	position: relative;
+	z-index: 50;
+	margin: 10px;
+	top: 390px;
+	width: 10px;
+}
+.slider input[type="radio"]:checked ~ img{
+	opacity: 1;
+}
+.overlay {
+    height: 45%;
+    width: 25%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 10%;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 50%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 3px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+
+
+
+
+
+
+</style>
+<script >
+	
+	function validateForm() {
+		var fname=document.forms["messageForm"]["name"].value;    
+		var gender=document.forms["messageForm"]["gender"].value;
+		var age=document.forms["messageForm"]["email"].value;
+		var message=document.forms["messageForm"]["message"].value;
+
+
+		if (name=="" || age==""|| email==""|| message=="") {      
+			alert("Empty field!!");
+		}                                                             
+		else{
+			alert("Thankyou for Your feedback!!");         
+		}
+	}
+	function openNav() {
+  document.getElementById("myNav").style.height = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.height = "0%";
+}
+	
+	
+
+</script>
+</head>
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<div style="position:absolute; left:0px; top:0px; width:320px; height:1005px;">
+
+
+<!--======================================home=============================-->
+
+ 	<a href="index.html"> <div style="background-image:url(images/logo.png); position:absolute; left:0px; top:0px; width:119px; height:34px;" title="">
+	</div> </a>
+
+
+	<div style="background-image:url(images/webpage.ai_02.gif); position:absolute; left:119px; top:0px; width:201px; height:34px;" title="">
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="#about">About</a>
+    <a href="#blog">Blog</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#contact">Contact</a>
+  </div>
+</div>
+<span style="font-size:20px;position:fixed; left:22%;   cursor:pointer" onclick="openNav()">&#9776;</span>
+</div>
+
+
+	<div style="background-image:url(images/webpage.ai_03.gif); position:absolute; left:0px; top:34px; width:320px; height:95px;" title="">
+		</div>
+
+
+	<div style="background-image:url(images/webpage.ai_04.gif); position:absolute; left:0px; top:129px; width:119px; height:58px;" title="">
+	</div>
+
+
+	<a href="#about"> <div style="background-image:url(images/button.png); position:absolute; left:119px; top:129px; width:201px; height:58px;" title="">
+	</div> </a>
+
+<!--======================================about=============================-->
+
+   <div id="about" style="background-image:url(images/webpage.ai_06.gif); position:absolute; left:0px; top:187px; width:320px; height:105px;" title="">
+	</div>
+
+
+	<div style="background-image:url(images/webpage.ai_07.png); position:absolute; left:0px; top:292px; width:320px; height:123px;" title="">
+	</div>
+
+<!--======================================blog=============================-->
+
+<div id="blog" class="slider">
+						<li>
+							<input type="radio" id="sbutton1" name="sradio" checked>
+							<label for="sbutton1"></label>
+							<img src="images/blogb.png">
+						</li>
+						<li>
+							<input type="radio" id="sbutton2" name="sradio">
+							<label for="sbutton2"></label>
+							<img src="images/blogb1.png">
+						</li>
+						<li>
+							<input type="radio" id="sbutton3" name="sradio">
+							<label for="sbutton3"></label>
+							<img src="images/blogb2.png">
+						</li>
+						</div>
+	</div>
+<!--======================================portfolio=============================-->
+
+
+	<a href="skill.html"><div id="portfolio" style="background-image:url(images/c1.png); position:absolute; left:0px; top:638px; width:113px; height:186px;" title="">
+	</div> </a>
+
+	<a href="qualification.html"><div style="background-image:url(images/c2.png); position:absolute; left:113px; top:638px; width:108px; height:186px;" title="">
+	</div> </a>
+
+	<a href="employment.html"><div style="background-image:url(images/c3.png); position:absolute; left:221px; top:638px; width:99px; height:186px;" title="">
+	</div> </a>
+
+<!--======================================Contact=============================-->
+   <div id="contact" style="background-image:url(images/content.gif); position:absolute; left:0px; top:824px; width:320px; height:156px;" title="">
+   	<div class="send">
+    <form name="messageForm" onsubmit="validateForm()" style="height: 150px;">
+
+	<input type="text" name="name" placeholder="name" style="width: 35%; height: 10%; position: absolute;top: 50px; left:100px;">
+	<br>
+
+	<input type="radio" name="gender" value="male" checked style="position: absolute; top: 70px; left: 130px;"><span style="font-weight:bold; position: absolute;font-size:15px; top:70px; left: 100px; color: black;">Male</span>
+
+	<input type="radio" name="gender" value="female" style="position: absolute; top: 70px; left: 195px;"><span style="font-weight: bold; color: white ;position: absolute;top:70px; left: 150px; color: black;">Female</span>
+	<br>
+
+	<input type="text" name="email" placeholder="Email" style="position: absolute;top: 90px; left: 100px;width: 35%; height: 10%;">
+
+
+	<p style="color: black; top: 100px; left: 100px; position: absolute; font-size: 9px;">Any query or complaints??</p><textarea name="message" rows="1" cols="9" placeholder="" style="position: absolute;top: 120px; left: 110px;"></textarea>
+
+
+	<input type="submit" value="Submit" style="position: absolute; top: 140px; left: 110px; height: 5px; width: 7px;">
+   	</div>
+   </form>
+</div>
+
+
+
+	<div style="background-image:url(images/map.gif); position:absolute; left:0px; top:980px; width:320px; height:77px;" title="">
+			<div style="width: 100%;"><iframe width="100%" height="77" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=manamaiju%2Cnepal+(My%20Business%20Name)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.maps.ie/create-google-map/">Google Maps iframe generator</a></iframe></div><br />
+	</div>
+
+
+	<!--======================================footer=============================-->
+	<a href="https://www.facebook.com/profile.php?id=100012300188885""><div style="background-image:url(images/facebook.png); position:absolute; left:0px; top:1057px; width:31px; height:43px;" title="">
+	</div> </a>
+
+	<a href="https://www.instagram.com/aarati__ghimire/"><div style="background-image:url(images/insta.png); position:absolute; left:31px; top:1057px; width:25px; height:43px;" title="">
+	</div> </a>
+
+	<a href="https://twitter.com/XkGmre"><div style="background-image:url(images/twitter.png); position:absolute; left:56px; top:1057px; width:28px; height:43px;" title="">
+	</div></a>
+
+	<a href="https://web.telegram.org/@miyaka1"><div style="background-image:url(images/tele.png); position:absolute; left:84px; top:1057px; width:28px; height:43px;" title="">
+	</div>
+
+	<div style="background-image:url(images/t1.png); position:absolute; left:112px; top:1057px; width:208px; height:43px;" title="">
+	</div>
+
+
+	
+</div>
+</body>
+</html>

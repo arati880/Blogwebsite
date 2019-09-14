@@ -1,0 +1,219 @@
+<html>
+<head>
+<title>home</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+
+  $("a").on('click', function(event) {
+    if (this.hash !== "") {
+
+      event.preventDefault();
+
+      var hash = this.hash;
+
+
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        window.location.hash = hash;
+      });
+    } 
+  });
+});
+function validateForm() {
+		var fname=document.forms["messageForm"]["name"].value;    
+		var gender=document.forms["messageForm"]["gender"].value;
+		var age=document.forms["messageForm"]["email"].value;
+		var message=document.forms["messageForm"]["message"].value;
+
+
+		if (name=="" || age==""|| email==""|| message=="") {      
+			alert("Empty field!!");
+		}                                                             
+		else{
+			alert("Thankyou for Your feedback!!");         
+		}
+	}
+</script>
+<style>
+.slider{
+	top: 1178px;
+	position: relative;
+	list-style: none;
+	padding: 0px;
+	display: flex;
+	justify-content: center;
+}
+.slider img{
+	position: absolute;
+	top: -15px;
+	left: 0px;
+	width: 1280px;
+	height: 659px;
+	opacity: 0;
+}
+.slider input[type="radio"]{
+	position: relative;
+	z-index: 50;
+	margin: 10px;
+	top: 610px;
+	width: 30px;
+}
+.slider input[type="radio"]:checked ~ img{
+	opacity: 1;
+}
+</style>
+</head>
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<div style="position:absolute; left:0px; top:0px; width:1280px; height:3108px;">
+
+<!--======================================navigation bar=============================-->
+<div style="position: fixed; z-index: 1; top: 0%;">
+	
+
+
+	<a href="#"><div style="background-image:url(images/home.png); position:absolute; left:0px; top:0px; width:249px; height:51px;" title="">
+	</div> </a>
+	
+	<a href="#about"><div style="background-image:url(images/about.png); position:absolute; left:249px; top:0px; width:252px; height:51px;" title="">
+	</div> </a>
+
+	
+
+	<a href="index.html"><div style="background-image:url(images/logo.png); position:absolute; left:501px; top:0px; width:197px; height:51px;" title="">
+	</div> </a>
+	
+
+	<a href="#blog"><div style="background-image:url(images/blog.png); position:absolute; left:698px; top:0px; width:151px; height:51px;" title="">
+	</div> </a>
+	
+
+	<a href="#portfolio"> <div style="background-image:url(images/portfolio.png); position:absolute; left:849px; top:0px; width:153px; height:51px;" title=""> </div> </a>
+
+
+	<a href="#contact"><div style="background-image:url(images/contact.png); position:absolute; left:1002px; top:0px; width:278px; height:51px;" title="">
+	</div> </a>
+</div>
+	
+
+	<!--======================================home=============================-->
+
+	
+
+	<div id="#" style="background-image:url(images/webpage.ai_07.png); position:absolute; left:0px; top:51px; width:1280px; height:308px;" title="">
+	</div>
+	
+
+	<div style="background-image:url(images/webpage.ai_08.gif); position:absolute; left:0px; top:359px; width:611px; height:189px;" title="">
+	</div>
+	
+
+	<a href="#about"><div  style="background-image:url(images/button.png); position:absolute; left:611px; top:359px; width:669px; height:189px;" title="">
+	</div> </a>
+
+	<!--======================================about=============================-->
+	
+	<div id="about" style="background-image:url(images/avatar.gif); position:absolute; left:0px; top:558px; width:508px; height:620px;" title="">
+	</div>
+
+	<div style="background-image:url(images/text.gif); position:absolute; left:508px; top:558px; width:772px; height:620px;" title="">
+	</div>
+
+
+
+	<!--======================================blog=============================-->
+
+	<div id="blog" class="slider">
+						<li>
+							<input type="radio" id="sbutton1" name="sradio" checked>
+							<label for="sbutton1"></label>
+							<img src="images/blogb.png">
+						</li>
+						<li>
+							<input type="radio" id="sbutton2" name="sradio">
+							<label for="sbutton2"></label>
+							<img src="images/blogb1.png">
+						</li>
+						<li>
+							<input type="radio" id="sbutton3" name="sradio">
+							<label for="sbutton3"></label>
+							<img src="images/blogb3.png">
+						</li>
+						</div>
+	</div>
+
+	<!--======================================portfolio=============================-->
+
+	
+	<div id="portfolio" style="background-image:url(images/p1.png); position:absolute; left:0px; top:1837px; width:474px; height:620px;" title="">
+	</div>
+
+	<div style="background-image:url(images/p2.png); position:absolute; left:474px; top:1837px; width:474px; height:620px;" title="">
+	</div>
+
+	<div style="background-image:url(images/p3.png); position:absolute; left:948px; top:1837px; width:332px; height:620px;" title="">
+	</div>
+
+	<!--======================================Contact=============================-->
+	
+	<div id="contact" style="background-image:url(images/map.png); position:absolute; left:0px; top:2457px; width:749px; height:478px;" title="">
+	<div style="width: 100%"><iframe width="130%" height="480" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=manamaiju%2Cnepal+(My%20Business%20Name)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.maps.ie/create-google-map/">Google Maps iframe generator</a></iframe></div><br />
+	</div>
+
+
+	<div style="background-image:url(images/content.png); position:absolute; left:749px; top:2457px; width:531px; height:478px;" title="">
+
+    <div class="send">
+    <form name="messageForm" onsubmit="validateForm()" style="height: 150px;">
+	<input type="text" name="name" placeholder="name" style="width: 40%; height: 7%; position: absolute;top: 120px; left:100px; box-shadow: 2px 3px #888888; ">
+	<br>
+
+	<input type="radio" name="gender" value="male" checked style="position: absolute; top: 170px; left: 135px;"><span style="font-weight:bold;color: white; position: absolute;top:170px; left: 100px; color: black;">Male</span>
+
+	<input type="radio" name="gender" value="female" style="position: absolute; top: 170px; left: 220px;"><span style="font-weight: bold; color: white ;position: absolute;top:170px; left: 170px; color: black;">Female</span>
+	<br>
+
+	<input type="text" name="email" placeholder="Email" style="position: absolute;top: 200px; left: 100px; box-shadow: 2px 3px #888888;width: 40%; height: 7%;">
+
+
+	<p style="color: black; top: 230px; left: 100px; position: absolute;">Any query or complaints??</p><textarea name="message" rows="6" cols="30" placeholder="Your message/complaint" style="position: absolute;top: 270px; left: 100px; box-shadow: 2px 3px #888888"></textarea>
+
+
+	<input type="submit" value="Submit" style="position: absolute; top: 380px; left: 180px;">
+</form>
+</div>   
+</div>
+
+<!--======================================Footer=============================-->
+   <div style="background-image:url(images/text.png); position:absolute; left:0px; top:2935px; width:1280px; height:102px;" title="">
+	</div>
+
+
+	<div style="background-image:url(images/webpage.ai_21.gif); position:absolute; left:0px; top:3037px; width:501px; height:71px;" title="">
+	</div>
+
+
+	<a href="https://www.facebook.com/profile.php?id=100012300188885"> <div style="background-image:url(images/facebook.png); position:absolute; left:501px; top:3037px; width:80px; height:71px;" title=""> </div> </a>
+
+
+	<a href="https://web.telegram.org/@miyaka1"> <div style="background-image:url(images/telegram.png); position:absolute; left:581px; top:3037px; width:82px; height:70px;" title=""> </div> </a>
+
+
+	<a href="https://www.instagram.com/aarati__ghimire/"> <div style="background-image:url(images/insta.png); position:absolute; left:663px; top:3037px; width:82px; height:70px;" title="">
+	</div> </a>
+
+
+	<a href="https://twitter.com/XkGmre"> <div style="background-image:url(images/twitter.png); position:absolute; left:745px; top:3037px; width:82px; height:70px;" title="">
+	</div> </a>
+
+
+	<div style="background-image:url(images/webpage.ai_26.gif); position:absolute; left:827px; top:3037px; width:453px; height:71px;" title="">
+	</div>
+
+	
+</div>
+</body>
+</html>
